@@ -2,12 +2,14 @@
 
 ## Demo Link
 
-For Demo deployed please [Click here rediect to Demo](https://weather-forecast-4k5auqdtz-kimsengtan.vercel.app/)
+For deployed Demo please [Click here rediect to Demo](https://weather-forecast-4k5auqdtz-kimsengtan.vercel.app/)
+
 link: https://weather-forecast-4k5auqdtz-kimsengtan.vercel.app/
 
 ## Git Repo
 
 For Git Repo Link please [Click here redirect to Repo](https://github.com/kimsengtan/WeatherForecast)
+
 link: https://github.com/kimsengtan/WeatherForecast
 
 ## Build Setup run in Localhost
