@@ -2,9 +2,9 @@
 
 ## Demo Link
 
-For deployed Demo please [Click here rediect to Demo](https://weather-forecast-4k5auqdtz-kimsengtan.vercel.app/)
+For deployed Demo please [Click here rediect to Demo](https://weather-forecast-kf65gdbo0-kimsengtan.vercel.app/)
 
-link: https://weather-forecast-4k5auqdtz-kimsengtan.vercel.app/
+link: https://weather-forecast-kf65gdbo0-kimsengtan.vercel.app/
 
 ## Git Repo
 
