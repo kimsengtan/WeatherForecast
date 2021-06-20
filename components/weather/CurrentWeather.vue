@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="text-h4 primary--text text--darken-2">Today</div>
-    <div v-if="weatherData" class="d-flex flex-wrap">
+    <div v-if="Object.keys(weatherData).length > 0" class="d-flex flex-wrap">
       <v-img
         class="flex-grow-0 flex-shrink-1"
         width="100px"
