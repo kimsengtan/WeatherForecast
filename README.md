@@ -2,7 +2,7 @@
 
 ## Demo Link
 
-For deployed Demo please [Click here rediect to Demo](https://weather-forecast-psi.vercel.app/)
+For deployed Demo please [Click here redirect to Demo](https://weather-forecast-psi.vercel.app/)
 
 link: https://weather-forecast-psi.vercel.app/
 
