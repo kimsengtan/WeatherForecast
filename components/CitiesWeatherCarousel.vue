@@ -161,8 +161,8 @@ export default {
     },
     clear() {
       const payload = {
-        title: 'Clear to default state',
-        text: 'Are you sure reset it to default view?',
+        title: 'Clear Carousel',
+        text: 'Are you sure reset the carousel to default view?',
         actions: [
           {
             label: 'Cancel',

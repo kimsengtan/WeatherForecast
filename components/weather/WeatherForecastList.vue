@@ -6,12 +6,16 @@
       :key="item.day"
       :class="index % 2 == 0 && 'blue-grey lighten-5'"
     >
-      <v-list-item-title class="flex-grow-0 flex-shrink-1 font-weight-medium">{{
-        $dayjs.unix(item.dt).format('ddd, MMM DD')
-      }}</v-list-item-title>
+      <v-list-item-title
+        class="flex-grow-0 flex-shrink-1 font-weight-medium pr-3"
+        >{{ $dayjs.unix(item.dt).format('ddd, MMM DD') }}</v-list-item-title
+      >
 
-      <v-list-item-icon class="flex-grow-1 flex-shrink-0 align-center">
-        <v-img :src="imgUrl + '/' + item.icon + '.png'"></v-img>
+      <v-list-item-icon class="flex-grow-1 flex-sm-shrink-0 align-center">
+        <v-img
+          v-if="$vuetify.breakpoint.smAndUp"
+          :src="imgUrl + '/' + item.icon + '.png'"
+        ></v-img>
         <div class="blue-grey--text text--lighten-1">
           {{ item.temp_min }} / {{ item.temp_max }} &#x2103;
         </div>
