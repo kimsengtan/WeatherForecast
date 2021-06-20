@@ -51,6 +51,7 @@
 
 <script>
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+import CurrentWeather from './weather/CurrentWeather.vue'
 import 'swiper/css/swiper.css'
 import { cities } from '~/utilities/constant'
 import weather from '~/mixins/weather'
@@ -63,6 +64,7 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
+    CurrentWeather,
   },
   mixins: [weather],
   data() {

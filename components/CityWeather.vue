@@ -35,8 +35,8 @@
 </template>
 
 <script>
-import CurrentWeather from './CurrentWeather'
-import WeatherForecastList from './WeatherForecastList'
+import CurrentWeather from './weather/CurrentWeather'
+import WeatherForecastList from './weather/WeatherForecastList'
 import { cities } from '~/utilities/constant'
 import weather from '~/mixins/weather'
 export default {
