@@ -10,6 +10,7 @@
           v-for="(action, index) in dialog.actions"
           :key="index"
           outlined
+          :color="action.color || ''"
           @click="invokeCallback(action.callback)"
           >{{ action.label }}</v-btn
         >

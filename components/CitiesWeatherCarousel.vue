@@ -173,6 +173,7 @@ export default {
           },
           {
             label: 'Confirm',
+            color: 'primary',
             callback: () => this.resetSaved(),
           },
         ],

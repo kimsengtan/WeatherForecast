@@ -15,6 +15,7 @@
     <v-btn
       color="secondary"
       class="mt-2"
+      :loading="gettingLocation"
       @click="getWeatherByCurrentLocation()"
     >
       <v-icon class="mr-1"> mdi-crosshairs-gps </v-icon> use current location
