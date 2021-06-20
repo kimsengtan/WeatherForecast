@@ -59,6 +59,7 @@ export default {
     }
   },
   watch: {
+    // listen on city selected from dropdown, and get the data accordingly
     citySelected: {
       handler(val) {
         if (process.client && val) {
@@ -71,22 +72,29 @@ export default {
   },
   methods: {
     async getTodayWeather({ lat, lon }) {
+      // get today weather from api
+      // method getWeatherByCoordinate is located at weather mixin
       this.weatherData = await this.getWeatherByCoordinate({ lat, lon })
     },
     async getForecastListByCoord({ lat, lon }) {
       try {
+        // 5 days with data every 3 hours
         const { data } = await this.$axios.get('/forecast', {
           params: { lat, lon, units: this.unit },
         })
         const weatherList = data.list
+
         let currentTimestamp = this.$dayjs().unix()
+        // filter the forecast list return from api
         this.forecastList = weatherList.reduce((listInDay, current) => {
+          // to ensure the interval data filtered is updated with current time
           if (current.dt > currentTimestamp) {
             listInDay.push({
               dt: current.dt,
               ...current.weather[0],
               ...current.main,
             })
+            // get the next day data by adding 1 day
             currentTimestamp += 60 * 60 * 24
           }
           return listInDay
@@ -97,7 +105,7 @@ export default {
       this.citySelected = null
       if (navigator.geolocation) {
         this.gettingLocation = true
-        // get position
+        // get geolocation from user location
         navigator.geolocation.getCurrentPosition(
           (position) => {
             this.gettingLocation = false
@@ -113,6 +121,7 @@ export default {
             }
           },
           (err) => {
+            // show error message if user location not accessible
             this.gettingLocation = false
             this.errorStr = err.message
           }

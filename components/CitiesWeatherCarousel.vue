@@ -93,7 +93,7 @@ export default {
     }
   },
   computed: {
-    // filter added cities
+    // filter added cities, show only cities that are not added
     citiesFiltered() {
       return cities.filter(
         (item) =>
@@ -102,6 +102,7 @@ export default {
     },
   },
   mounted() {
+    // read from local storage if any
     if (typeof Storage !== 'undefined') {
       let savedLocStorage = localStorage.getItem('savedLocation')
       try {
@@ -116,6 +117,7 @@ export default {
   },
   methods: {
     async getCarouselWeather(savedLocations) {
+      // get all saved locations weather data
       const promises = []
       savedLocations.forEach((item) => {
         const coord = item.coord
@@ -127,12 +129,6 @@ export default {
         this.carouselItems = values
       })
     },
-    // toSlide(dir) {
-    //   const realIndex = this.$refs.mySwiper.$swiper.realIndex
-    //   if (dir === 'next') this.$refs.mySwiper.$swiper.slideTo(realIndex, 500)
-    //   else if (dir === 'prev')
-    //     this.$refs.mySwiper.$swiper.slideTo(realIndex, 500)
-    // },
     closeDialog() {
       this.dialog = false
       this.citySelected = null
