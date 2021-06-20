@@ -1,20 +1,29 @@
-# WeatherForecast
+# Weather Forecast
 
-## Build Setup
+## Demo Link
+
+For Demo deployed please [Click here rediect to Demo](https://weather-forecast-4k5auqdtz-kimsengtan.vercel.app/)
+link: https://weather-forecast-4k5auqdtz-kimsengtan.vercel.app/
+
+## Git Repo
+
+For Git Repo Link please [Click here redirect to Repo](https://github.com/kimsengtan/WeatherForecast)
+link: https://github.com/kimsengtan/WeatherForecast
+
+## Build Setup run in Localhost
 
 ```bash
 # install dependencies
 $ yarn install
 
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
 # generate static project
 $ yarn generate
+
+# launch server
+$ yarn start
+
+# Open browser at localhost:3000
+Go to [localhost:3000](http://localhost:3000/)
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+Thank you.
