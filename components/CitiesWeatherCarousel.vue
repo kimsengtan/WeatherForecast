@@ -1,12 +1,12 @@
 <template>
   <v-card class="mx-auto" width="800px">
-    <div class="text-h4 pa-4 primary--text align-center flex-wrap d-flex">
+    <div class="text-h4 px-4 py-3 primary--text align-center flex-wrap d-flex">
       Cities Carousel
       <v-spacer></v-spacer>
-      <v-btn class="mr-2" color="red" outlined @click="clear()"
+      <v-btn class="mr-2 my-2" color="red" outlined @click="clear()"
         >Clear To Default</v-btn
       >
-      <v-btn color="primary darken-2" outlined @click="dialog = true"
+      <v-btn color="primary darken-2 my-2" outlined @click="dialog = true"
         >add your favourite city</v-btn
       >
     </div>
